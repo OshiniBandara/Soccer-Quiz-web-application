@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>The Soccer Website - KICK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet1.css">
+<head>
+    <title>The Soccer Website - KICK/Contact</title>
+    </head>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="sidebar bar-block small hide-small center">
+  <!-- Avatar image in top left corner -->
+  <img src="Soccer-Football-Wallpapers-two-soccer-players-soccerball.jpg" style="width:100%">
+  <a href="thewebpage.html" class="bar-item button padding-large black">
+    <i class="xxlarge"></i>
+    <p class="medium">HOME</p>
+  </a>
+  <a href="#products" class="bar-item button padding-large hover-black">
+    <i class="xxlarge"></i>
+    <p class="medium">BUY PRODUCTS</p>
+  </a>
+    <a href="soccerquiz.html" target="_blank" class="bar-item button padding-large hover-black">
+    <i class="xxlarge"></i>
+    <p class="medium">TAKE THE QUIZ</p>
+    </a>
+  <a class="bar-item button padding-large hover-black">
+    <i class="xxlarge"></i>
+    <p class="medium">BUY TICKETS</p>
+  <a href="contact.html" target="_blank" class="bar-item button padding-large hover-black">
+    <i class="xxlarge"></i>
+    <p class="medium">CONTACT</p>
+  </a>
+    </a>
+</nav>
+
+<!-- Page Content -->
+<div class="padding-large" id="main">
+    <!-- Contact Section -->
+  <div class="padding-64 content text-grey" id="contact">
+    <h2 class="row center padding-16 section light-grey box-model text-black">Contact Us</h2><br>
+    <p class="large row center padding-16 section light-grey box-model text-black">Hi! We love your feedback, Please fill in the details below:</p>
+      <marquee behavior=scroll direction="right" scrollamount="15"><img src="giphy.gif" width=400 height=200></marquee>
+      <marquee behavior=scroll direction="left" scrollamount="15"><img src="giphy%20copy.gif" width=400 height=200></marquee>
+    <form id="thisbutton">
+      <p><input id="fname" class="input padding-16" type="text" placeholder="First Name" name="fName" required></p>
+      <p><input id="lname" class="input padding-16" type="text" placeholder="Last Name" name="lName" required></p>  
+      <p><input id="email" class="input padding-16" type="text" placeholder="Email" name="Email" required></p>
+      <p><input id="subject" class="input padding-16" type="text" placeholder="Subject" name="Subject" required></p>
+      <p><input id="message" class="input padding-16" type="text" placeholder="Message" name="Message" required></p>
+      <div class="medium row center padding-16 section light-grey box-model text-black">
+      <p class="row center padding-16 section light-grey box-model text-black">RATE US</p>
+        <input id="rd1" type="radio" name="one" value="Needs Improvement" required>Needs Improvement 
+        <input id="rd2" type="radio" name="one" value="Good">Good
+        <input id="rd3" type="radio" name="one" value="Too Good">Too Good
+        <input id="rd4" type="radio" name="one" value="Excellent">Excellent
+        </div><br>
+        <button id="thisbutton" onclick="displayComments()" class="button light-grey padding-large  row center padding-16 section light-grey box-model text-black" type="submit">
+        SEND MESSAGE
+        </button>
+      </form>
+  <!-- End Contact Section -->
+  </div>
+<a href="cv-himashi.html" target="_blank" class="xlarge row center padding-16 section light-grey box-model text-black">
+    <p class="medium"> Open Himashi's CV</p>
+    </a>
+
+    </div>
+    
+    </body>
+    <script>
+    function displayComments(){
+        fname=document.getElementById('fname').value;
+        message=document.getElementById('message').value;
+        if (document.getElementById('rd1').checked) {
+        comment=document.getElementById('rd1').value;
+        }else if(document.getElementById('rd2').checked){
+            comment=document.getElementById('rd2').value;
+        }else if(document.getElementById('rd3').checked){
+            comment=document.getElementById('rd3').value;
+        }else if(document.getElementById('rd4').checked){
+            comment=document.getElementById('rd4').value;
+        }
+        str1="Dear ";
+        str2=", Thank you very much for your feedback. You have rated our site as ";
+        str3=" and your comment was "
+        window.alert(str1+fname+str2+comment+str3+message);
+    }
+    </script>
+</html>

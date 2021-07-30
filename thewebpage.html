@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>The Soccer Website - KICK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet1.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="sidebar bar-block small hide-small center">
+  <!-- Avatar image in top left corner -->
+  <img src="balllogo.jpg" style="width:100%">
+  <a href="thewebpage.html" class="bar-item button padding-large black">
+    <i class="xxlarge"></i>
+    <p class="medium">HOME</p>
+  </a>
+  <a href="#products" class="bar-item button padding-large hover-black">
+    <i class="xxlarge"></i>
+    <p class="medium">BUY PRODUCTS</p>
+  </a>
+    <a href="soccerquiz.html" target="_blank" class="bar-item button padding-large hover-black">
+    <i class="xxlarge"></i>
+    <p class="medium">TAKE THE QUIZ</p>
+    </a>
+  <a class="bar-item button padding-large hover-black">
+    <i class="xxlarge"></i>
+    <p class="medium">BUY TICKETS</p>
+  <a href="contact.html" class="bar-item button padding-large hover-black">
+    <i class="xxlarge"></i>
+    <p class="medium">CONTACT</p>
+  </a>
+    </a>
+</nav>
+
+<!-- Page Content -->
+<div class="padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="container padding-32 center black" id="home">
+      
+      <h1 class="jumbo row center padding-16 section light-grey box-model text-black"><span class="hide-small"> KICK </span> </h1><br>
+      <marquee behavior=scroll direction="right" scrollamount="20"><p class="large row center padding-16 section light-grey box-model text-black">For Soccer Lovers.</p></marquee>
+      
+   <div>
+    <img id="img" class="mySlides" src="Soccer-Football-Wallpapers-two-soccer-players-soccerball.jpg" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="pexels-photo-114296.jpeg" alt="boy" class="image" width=800px height=500px> 
+    <img id="img" class="mySlides" src="gif2.gif" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="d39f87f4a22545d7181319bd57001d70.jpg" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="dzeko-edin.jpg" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="gif1.gif" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="gif10.gif" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="gif3.gif" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="img_66506555.jpg" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="new-soccer-wallpaper.jpg" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="gif5.gif" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="soccer-wallpaper-5669-5832-hd-wallpapers.jpg" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="Young-Boy-Football-soccer-hd-wallpaper.jpg" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="gif6.gif" alt="boy" class="image" width=800px height=500px>
+    <img id="img" class="mySlides" src="712654.jpg" alt="boy" class="image" width=800px height=500px>
+        </div>
+      <marquee behavior=scroll direction="left" scrollamount="20"><p class="large row center padding-16 section light-grey box-model text-black">Vince Lombardi. “Winning isn't everything, it's the only thing.”</p></marquee>
+  </header>
+    <footer>
+    <a href="cv-himashi.html" target="_blank" class="xlarge row center padding-16 section light-grey box-model text-black">
+    <p class="medium"> Open Himashi's CV</p>
+    </a>
+    </footer>
+    </div>
+    
+    
+</body>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+</html>

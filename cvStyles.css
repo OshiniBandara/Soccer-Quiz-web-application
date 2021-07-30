@@ -1,0 +1,31 @@
+h1{
+    display:inline-block;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+p{
+    font-size: 14px;
+}
+
+#topic{
+    margin-left: 450px;
+}
+
+#birth{
+    
+}
+#nationality{
+    float:right;
+    margin-bottom: 200px;
+    margin-top:-22px;
+}
+
+#img{
+    margin-left: 450px;
+}
+
+#cv{
+    position: fixed;
+    bottom:0;
+}
